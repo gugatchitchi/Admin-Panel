@@ -1,13 +1,13 @@
 <template>
-  <div class="login">
-    <h1>Login Page</h1>
-    <router-link to="/">Home Page</router-link>
+  <div class="login"> 
+    <LoginForm />    
   </div>
 </template>
 
 <script>
+import LoginForm from '@/components/LoginForm.vue'
 export default {
   name: 'Login',
-  components: {}
+  components: { LoginForm},
 }
 </script>

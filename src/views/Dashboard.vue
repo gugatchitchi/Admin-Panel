@@ -5,6 +5,8 @@
     <ColorfulBlock :color="'#26A243'" :name="'Profit LM'" :value="35000" />
     <ColorfulBlock :color="'#F7BB09'" :name="'Cogs LM'" :value="65000" />
     <ColorfulBlock :color="'#D53343'" :name="'Salaries LM'" :value="1000" />
+
+    
   </div>
 </template>
 
@@ -17,11 +19,10 @@ export default {
     PanelHeader,
     ColorfulBlock,
   },
+  data() {
+    return {
+       
+    }
+  }
 }
 </script>
-
-<style scoped>
-h1 {
-  color: black;
-}
-</style>

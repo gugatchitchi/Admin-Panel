@@ -33,7 +33,7 @@ export default {
 
       // What kind of error message should we show the customer?
       // code determines what input is missing
-      if(this.email != '' && this.password != '') this.$router.push('/dashboard')
+      if(this.email != '' && this.password != '') this.$router.push('dashboard')
       else if (this.email != '') this.errorMessage = 'Please enter password'
       else if (this.password != '') this.errorMessage = 'Please enter email'
       else this.errorMessage = 'Please enter email and password'
@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* Container for the whole page */
 .login-form {
   height: 100vh;
@@ -84,7 +84,7 @@ form input:nth-child(2) {
 }
 /* error message between button and inputs */
 form .error {
-  color: #e82727;
+  color: #fc3d03;
   font-weight: bold;
 }
 /* button */
